@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Hang Man Game</title>
+    <style>
+
+
+        body{
+            background-color: #05B2DC;
+            color : white;
+            font-family: Arial;
+        }
+        h1, h2{
+            text-align: center;
+        }
+        .alphabet-container{
+            display: grid;
+            grid-template-columns: repeat(15, 1fr);
+        }
+        .alphabet-button{
+            padding : 30px;
+            margin : 10px;
+            border: none;
+            background-color:#031A6B ;
+            color: white;
+            cursor: pointer;
+            font-weight: bold;
+        }
+        .alphabet-button:hover{
+            opacity: 0.7;
+        }
+        .answer-container{
+            display: flex;
+            justify-content: center;
+            align-items: center;
+        }
+        .answering{
+            background-color: #004385;
+            color : white;
+            padding: 35px;
+            margin : 15px;
+            margin-top: 50px;
+        }
+
+        
+
+
+    </style>
+</head>
+<body>
+
+    <h1> Hang Man Game</h1>
+    <h2> lives : <span class="score"> </span></h2>
+    <h2 class="state"> state </h2>
+    <div class="alphabet-container"> 
+    </div>
+    <div class="answer-container">
+    </div>
+    <h2> clue : <span class="clue"> </span> </h2>
+
+
+    <script src="hangman.js"> </script>
+
+    
+</body>
+</html>
